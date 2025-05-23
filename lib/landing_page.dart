@@ -1,4 +1,3 @@
-// landing_page.dart
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -46,6 +45,7 @@ class LandingPageState extends State<LandingPage> {
                     letterSpacing: 0.5,
                   ),
                 ),
+                
                 SizedBox(height: 16),
                 Text(
                   'sibisi',
@@ -56,11 +56,12 @@ class LandingPageState extends State<LandingPage> {
                     letterSpacing: 2.0,
                   ),
                 ),
+
                 SizedBox(height: 40),
-                // Loading indicator
                 CircularProgressIndicator(
                   valueColor: AlwaysStoppedAnimation<Color>(Color(0xFF5A5A7A)),
                 ),
+
                 SizedBox(height: 20),
                 Text(
                   'Loading...',

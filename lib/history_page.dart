@@ -1,8 +1,7 @@
-// history_page.dart
 import 'package:flutter/material.dart';
 
 class HistoryPage extends StatelessWidget {
-  // Sample history data
+
   final List<Map<String, String>> historyItems = [
     {
       'date': 'May 22, 2025',
@@ -33,7 +32,6 @@ class HistoryPage extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              // Header with title and settings icon
               Padding(
                 padding: EdgeInsets.all(20),
                 child: Row(
@@ -56,7 +54,6 @@ class HistoryPage extends StatelessWidget {
                 ),
               ),
               
-              // History section
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20),
                 child: Align(
@@ -73,8 +70,6 @@ class HistoryPage extends StatelessWidget {
               ),
               
               SizedBox(height: 20),
-              
-              // History list
               Expanded(
                 child: ListView.builder(
                   padding: EdgeInsets.symmetric(horizontal: 20),
@@ -106,6 +101,7 @@ class HistoryPage extends StatelessWidget {
                               fontWeight: FontWeight.w500,
                             ),
                           ),
+
                           SizedBox(height: 8),
                           Text(
                             item['text']!,
@@ -122,7 +118,6 @@ class HistoryPage extends StatelessWidget {
                 ),
               ),
               
-              // Back button
               Padding(
                 padding: EdgeInsets.all(20),
                 child: ElevatedButton(
